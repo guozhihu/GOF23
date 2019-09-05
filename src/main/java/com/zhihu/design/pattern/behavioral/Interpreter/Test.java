@@ -1,0 +1,16 @@
+package com.zhihu.design.pattern.behavioral.Interpreter;
+
+/**
+ * Author: zhihu
+ * Description:
+ * Date: Create in 2019/9/6 0:46
+ */
+public class Test {
+    
+    public static void main(String[] args) {
+        String geelyInputStr = "6 100 11 + *";
+        GeelyExpressionParser expressionParser = new GeelyExpressionParser();
+        int result = expressionParser.parse(geelyInputStr);
+        System.out.println("解释器计算结果：" + result);
+    }
+}
